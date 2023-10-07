@@ -38,7 +38,9 @@
           <h1>Atilla & Ruby</h1>
           <p>Akan melangsungkan resepsi pernikahan dalam:</p>
           <div class="simply-countdown"></div>
-          <a href="#home" class="btn btn-lg mt-4">Lihat Undangan</a>
+          <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+            >Lihat Undangan</a
+          >
         </h4>
       </main>
     </section>
@@ -263,16 +265,36 @@
                 </div>
               </li>
 
-              <li>
+              <li class="timeline-inverted">
                 <div
                   class="timeline-image"
                   style="
-                    background-image: url(https://picsum.photos/200/300);
+                    background-image: url(https://picsum.photos/200/303);
                   "></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h3>Mulai serius</h3>
-                    <span> 1 mei 2023</span>
+                    <span> 28 juni 2023</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Nisi voluptate quas, dolorum nobis pariatur molestiae.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="timeline-image"
+                  style="
+                    background-image: url(https://picsum.photos/200/302);
+                  "></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span> 30 agustus 2023</span>
                   </div>
                   <div class="timeline-body">
                     <p>
@@ -288,13 +310,168 @@
       </div>
     </section>
     <!-- end story -->
+    <!-- gallery -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Nemori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, dignissimos atque facilis odit nulla hic?
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a
+              href="img/gallery/1311953.jpg"
+              data-toggle="lightbox"
+              data-caption="My Wife"
+              data-gallery="mygallery">
+              <img
+                src="img/gallery/thumbnail/ruby.jpg"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/43/1200/768"
+              data-toggle="lightbox"
+              data-caption="none"
+              data-gallery="mygallery">
+              <img
+                src="https://picsum.photos/id/43/300/400"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/42/1200/768"
+              data-toggle="lightbox"
+              data-caption="none"
+              data-gallery="mygallery">
+              <img
+                src="https://picsum.photos/id/42/300/400"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/45/1200/768"
+              data-toggle="lightbox"
+              data-caption="none"
+              data-gallery="mygallery">
+              <img
+                src="https://picsum.photos/id/45/300/400"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/63/1200/768"
+              data-toggle="lightbox"
+              data-caption="none"
+              data-gallery="mygallery">
+              <img
+                src="https://picsum.photos/id/63/300/400"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/54/1200/768"
+              data-toggle="lightbox"
+              data-caption="none"
+              data-gallery="mygallery">
+              <img
+                src="https://picsum.photos/id/54/300/400"
+                alt="Ruby"
+                class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end gallery -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>isi form di bawah ini untuk melakukan konfirmasi Kehadiran</p>
+          </div>
+        </div>
+
+        <form
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="nama" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="exampleFormControlInput1"
+                name="jumlah"
+                min="1"
+                max="5"
+                length="1"
+                value="1" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih Salah Satu</option>
+                <option value="1">hadir</option>
+                <option value="0">Tidak hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 30px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- ! script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
-    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script src="javascript/script.js"></script>
+
+    <script src="javascript/script2.js"></script>
+
+    <script src="javascript/script3.js"></script>
   </body>
 </html>
